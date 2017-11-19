@@ -1,0 +1,37 @@
+/* add your CSS here */
+img{
+	width: 300px;
+	padding: 0 0 10px 0;
+	border-radius: 5px;
+}
+
+.int_fact{
+	font-style: italic;
+}
+
+span{
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	font-size: 14px;
+}
+
+div{
+	border: 1px solid #aaa;
+	padding: 10px;
+	padding-top: 0;
+	width: 280px;
+	border-radius: 5px;
+}
+
+.container{
+	width: 300px;
+	box-shadow: 5px 5px 5px #aaa;
+}
+
+p{
+	font-size: 12px;
+}
