@@ -3,8 +3,8 @@
 
 // When size is submitted by the user, call makeGrid()
 
-var cols, rows, color, btn, table;
-btn = $("#sizePicker");
+var cols, rows, color, butn, table;
+butn = $("#sizePicker");
 table = $("#pixelCanvas");
 
 function makeGrid() {
@@ -20,18 +20,19 @@ function makeGrid() {
 	}
 }
 
-btn.on("submit", function(event){
+butn.on("submit", function(event){
 	event.preventDefault();
 	makeGrid();
 });
 
 var clicked = false;
 table.on("click", "td", function(){
+	color = $("#colorPicker").val();
   if (clicked === false){
     $(this).attr("bgcolor", color);
     clicked = true;
   } else{
-    $(this).attr("bgcolor", "#FFFFFF");
+    $(this).attr("bgcolor", "#F5F5F5");
     clicked = false;
   }
 	
