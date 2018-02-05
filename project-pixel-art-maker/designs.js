@@ -26,7 +26,7 @@ butn.on("submit", function(event){
 });
 
 var clicked = false;
-table.on("click", "td", function(){
+table.on("mousedown", "td", function(){
 	color = $("#colorPicker").val();
   if (clicked === false){
     $(this).attr("bgcolor", color);
